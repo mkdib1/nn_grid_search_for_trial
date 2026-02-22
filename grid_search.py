@@ -53,7 +53,7 @@ def compile_model(model):
                                    metrics=['accuracy'])
 
 
-def train_model(model, X_train, y_train, X_test, y_test, epochs=50, batch_size=128):
+def train_model(model, X_train, y_train, X_test, y_test, epochs=30, batch_size=32):
 
     early_stopping = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=False)
     callbacks = [early_stopping]
