@@ -75,7 +75,7 @@ def evaluate_model(model, X_test, y_test):
 # DATASET LOADING & VARIABLES SETTING
 
 # loading dataset
-eeg = pd.read_csv('./data/eeg.csv', sep=";")
+eeg = pd.read_csv('./data/eeg.csv', sep=",")
 
 X = eeg.drop(columns=['class'])
 y = eeg['class']
